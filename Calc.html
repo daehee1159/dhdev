@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <link rel="stylesheet" href="Calc.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <script>
+            function Person(name, age){
+                this.name = name;
+                this.age = age;
+                this.introduce = function(){
+                    return 'My name is ' + this.name + '.' + ' My age is ' + this.age;
+                }
+            }
+            var p1 = new Person('daehee', 28);
+            document.write(p1.introduce());
+        </script> -->
+        <div>
+            <input type="text" id="display">
+        </div>
+        <div>
+            <input type="text" id="result">
+        </div>
+        <div class="layout">
+            <div class="plate" onclick="add(1)">
+                <a>1</a>
+            </div>
+            <div class="plate" onclick="add(2)">
+                <a>2</a>
+            </div>
+            <div class="plate" onclick="add(3)">
+                <a>3</a>
+            </div>
+            <div class="plate" onclick="add('+')">
+                <a>+</a>
+            </div>
+            <div class="plate" onclick="add(4)">
+                <a>4</a>
+            </div>
+            <div class="plate" onclick="add(5)">
+                <a>5</a>
+            </div>
+            <div class="plate" onclick="add(6)">
+                <a>6</a>
+            </div>
+            <div class="plate" onclick="add('-')">
+                <a>-</a>
+            </div>
+            <div class="plate" onclick="add(7)">
+                <a>7</a>
+            </div>
+            <div class="plate" onclick="add(8)">
+                <a>8</a>
+            </div>
+            <div class="plate" onclick="add(9)">
+                <a>9</a>
+            </div>
+            <div class="plate" onclick="add('x')">
+                <a>x</a>
+            </div>
+            <div class="plate" onclick="reset()">
+                <a id="reset">reset</a>
+            </div>
+            <div class="plate" onclick="add(0)">
+                <a>0</a>
+            </div>
+            <div class="plate" onclick="add('.')">
+                <a>.</a>
+            </div>
+            <div class="plate" onclick="add('/')">
+                <a>/</a>
+            </div>
+            <div class="plate-clear"></div>
+        </div>
+        <div class="enter" onclick="calculate()">
+            =
+        </div>
+        <script>
+            function add(char){
+                var display = document.getElementById('display');
+                display.value = display.value + char;
+            }
+            function calculate(){
+                var display = document.getElementById('display');
+                var result = eval(display.value);
+                document.getElementById('result').value = result;
+            }
+            function reset(){
+                document.getElementById('display').value = "";
+                document.getElementById('result').value = "";
+            }
+        </script>
+    </body>
+</html>
