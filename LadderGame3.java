@@ -28,11 +28,11 @@ public class LadderGame3 {
         System.out.println("===========================");
 
         System.out.println("당첨 결과입니다.");
-        for (int result = 0; a < selectPlayer.length; result++) {
+        for (int result = 0; result < selectPlayer.length; result++) {
             if (result > 0) {
                 System.out.print(", ");
             }
-            System.out.print(selectPlayer[a] + "번 커피 쏘세요!");
+            System.out.print(selectPlayer[result] + "번 커피 쏘세요!");
         }
     }
 }
